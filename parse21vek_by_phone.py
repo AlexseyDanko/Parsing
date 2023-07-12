@@ -58,7 +58,6 @@ for u in enumerate(urls_list):
                                                                  {'class': 'g-price item__price cr-price__in'}).text
     phone_in_stock = soup.find('div', {'class': 'item-price'}).find('span', {
         'class': 'g-status item__status cr-status__in'}).text
-
     results_base.append({
             'original_url': u[1],
             'phone_title': phone_title,
