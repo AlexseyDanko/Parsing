@@ -56,7 +56,6 @@ results_base = []
 for url in enumerate(urls_list):
     response = s.get(url=url[1], headers=headers)
     soup = BeautifulSoup(response.text, 'lxml')
-
     articles_title = soup.find('div', {'class': '_content-wrapper_t9svi_78 _material-info_t9svi_144'}).find(
         'h1').text.strip()
     articles_date = soup.find('span', {'class': '_date_t9svi_537 _date--full_t9svi_1'}).text.strip()
