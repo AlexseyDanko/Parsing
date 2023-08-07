@@ -45,6 +45,3 @@ while True:
     # print(new_link)
     count = count+1
 
-
-
-
