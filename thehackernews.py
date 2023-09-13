@@ -44,4 +44,3 @@ while True:
     new_link = soup.find('a', {'id': 'Blog1_blog-pager-older-link','class': 'blog-pager-older-link-mobile'}).get('href')
     # print(new_link)
     count = count+1
-
